@@ -1,0 +1,8 @@
+---
+  - name: deploy jar file
+    hosts: localhost
+    tasks:
+    - name: Copy Jar file
+      copy:
+        src: target/mavenproject8-1.0-SNAPSHOT.jar
+        dest: /home/sameer/mavenproject8-1.0-SNAPSHOT.jar
